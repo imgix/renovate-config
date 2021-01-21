@@ -1,0 +1,12 @@
+{
+  "extends": ["config:js-lib", ":maintainLockFilesWeekly"],
+  "automerge": false,
+  "automergeType": "branch",
+  "requiredStatusChecks": [],
+  "patch": {
+    "automerge": true
+  },
+  "devDependencies": {
+    "automerge": true
+  }
+}
