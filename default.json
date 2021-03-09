@@ -1,6 +1,5 @@
 {
   "extends": ["config:js-lib", ":maintainLockFilesWeekly"],
-  "requiredStatusChecks": [],
   "semanticCommitType": "deps",
   "packageRules": [
     {
