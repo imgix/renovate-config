@@ -14,7 +14,7 @@
       "depTypeList": ["dependencies"],
       "automergeType": "branch",
       "updateTypes": ["patch"],
-      "automerge": true,
+      "automerge": true
     }
   ]
 }
