@@ -4,42 +4,44 @@ A shareable Renovate config for imgix SDK repos
 
 ## How to use
 
-Set your `.renovaterc.json` or `renovate.json` config to:
+1. Set your `.renovaterc.json` or `renovate.json` config to:
 
-```json
-{
-  "extends": ["github>imgix/renovate-config"]
-}
-```
-
-Extend the config in a way that suits your repo. For example, in Angular we have configured some dependencies not to update for major updates:
-
-```json
-"packageRules": [
+  ```json
   {
-    "packagePatterns": [
-      "^@angular/",
-      "^zone.js$",
-      "^@angular-devkit/",
-      "^jasmine",
-      "karma",
-      "ng-packgr",
-      "protractor",
-      "tslint",
-      "typescript"
-    ],
-    "updateTypes": ["major"],
-    "enabled": false
-  },
-  {
-    "packagePatterns": [
-      "typescript"
-    ],
-    "updateTypes": ["major", "minor"],
-    "enabled": false
+    "extends": ["github>imgix/renovate-config"]
   }
-]
-```
+  ```
+
+2. You will also need to ensure that CI (e.g. Travis) will run for `renovate/*` branches.
+
+3. Extend the config in a way that suits your repo. For example, in Angular we have configured some dependencies not to update for major updates:
+
+  ```json
+  "packageRules": [
+    {
+      "packagePatterns": [
+        "^@angular/",
+        "^zone.js$",
+        "^@angular-devkit/",
+        "^jasmine",
+        "karma",
+        "ng-packgr",
+        "protractor",
+        "tslint",
+        "typescript"
+      ],
+      "updateTypes": ["major"],
+      "enabled": false
+    },
+    {
+      "packagePatterns": [
+        "typescript"
+      ],
+      "updateTypes": ["major", "minor"],
+      "enabled": false
+    }
+  ]
+  ```
 
 ### Required status checks
 
