@@ -1,6 +1,5 @@
 {
   "extends": ["config:js-lib", ":maintainLockFilesWeekly"],
-  "semanticCommitType": "deps",
   "packageRules": [
     {
       "depTypeList": ["devDependencies"],
@@ -13,6 +12,7 @@
       "depTypeList": ["dependencies"],
       "automergeType": "branch",
       "updateTypes": ["patch"],
+      "semanticCommitType": "deps",
       "automerge": true
     }
   ],
