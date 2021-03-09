@@ -16,5 +16,6 @@
       "updateTypes": ["patch"],
       "automerge": true
     }
-  ]
+  ],
+  "rebaseWhen": "behind-base-branch"
 }
