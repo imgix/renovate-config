@@ -4,7 +4,7 @@ A shareable Renovate config for imgix SDK repos
 
 ## How to use
 
-Set your `renovate.json` config to:
+Set your `.renovaterc.json` or `renovate.json` config to:
 
 ```json
 {
