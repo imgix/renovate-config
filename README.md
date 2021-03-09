@@ -40,3 +40,9 @@ Extend the config in a way that suits your repo. For example, in Angular we have
   }
 ]
 ```
+
+### Required status checks
+
+You may need to configure `requiredStatusChecks` if PRs or branches aren't automerging as they should.
+
+See [https://docs.renovatebot.com/configuration-options/#requiredstatuschecks](https://docs.renovatebot.com/configuration-options/#requiredstatuschecks) for more information
