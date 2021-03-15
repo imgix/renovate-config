@@ -1,5 +1,5 @@
 {
-  "extends": ["config:js-lib", ":maintainLockFilesWeekly"],
+  "extends": ["config:js-lib", "schedule:earlyMondays"],
   "packageRules": [
     {
       "depTypeList": ["devDependencies"],
@@ -17,5 +17,14 @@
     }
   ],
   "rebaseWhen": "behind-base-branch",
-  "masterIssue": true
+  "masterIssue": true,
+  "stabilityDays": 3,
+  "lockFileMaintenance": {
+    "enabled": true,
+    "extends": [
+      "schedule:weekly"
+    ],
+    "automerge": true,
+    "automergeType": "branch"
+  }
 }
