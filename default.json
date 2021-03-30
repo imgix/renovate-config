@@ -16,6 +16,7 @@
       "automerge": true
     }
   ],
+  "prCreation": "not-pending",
   "rebaseWhen": "behind-base-branch",
   "masterIssue": true,
   "stabilityDays": 3,
