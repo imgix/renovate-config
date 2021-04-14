@@ -20,6 +20,7 @@
   "rebaseWhen": "behind-base-branch",
   "masterIssue": true,
   "stabilityDays": 3,
+  "prNotPendingHours": 96,
   "lockFileMaintenance": {
     "enabled": true,
     "extends": [
