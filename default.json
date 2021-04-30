@@ -18,7 +18,7 @@
   ],
   "prCreation": "not-pending",
   "rebaseWhen": "behind-base-branch",
-  "masterIssue": true,
+  "dependencyDashboard": true,
   "stabilityDays": 3,
   "prNotPendingHours": 96,
   "lockFileMaintenance": {
