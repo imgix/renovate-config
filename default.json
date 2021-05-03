@@ -2,16 +2,16 @@
   "extends": ["config:js-lib", "schedule:earlyMondays"],
   "packageRules": [
     {
-      "depTypeList": ["devDependencies"],
-      "updateTypes": ["patch", "minor", "major"],
+      "matchDepTypes": ["devDependencies"],
+      "matchUpdateTypes": ["patch", "minor", "major"],
       "automergeType": "branch",
       "automerge": true,
       "semanticCommitScope": "dev-deps"
     },
     {
-      "depTypeList": ["dependencies"],
+      "matchDepTypes": ["dependencies"],
       "automergeType": "branch",
-      "updateTypes": ["patch"],
+      "matchUpdateTypes": ["patch"],
       "semanticCommitType": "deps",
       "automerge": true
     }
@@ -23,9 +23,7 @@
   "prNotPendingHours": 96,
   "lockFileMaintenance": {
     "enabled": true,
-    "extends": [
-      "schedule:weekly"
-    ],
+    "extends": ["schedule:weekly"],
     "automerge": true,
     "automergeType": "branch"
   }
