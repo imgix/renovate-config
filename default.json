@@ -1,18 +1,21 @@
 {
   "extends": ["config:js-lib", "schedule:earlyMondays"],
+  "labels": ["renovate"],
   "packageRules": [
     {
       "matchDepTypes": ["devDependencies"],
       "matchUpdateTypes": ["patch", "minor", "major"],
       "automergeType": "branch",
       "automerge": true,
-      "semanticCommitScope": "dev-deps"
+      "semanticCommitScope": "dev-deps",
+      "addLabels": ["deps: dev"]
     },
     {
       "matchDepTypes": ["dependencies"],
       "automergeType": "branch",
       "matchUpdateTypes": ["patch"],
       "semanticCommitType": "deps",
+      "addLabels": ["deps"],
       "automerge": true
     }
   ],
